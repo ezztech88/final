@@ -119,5 +119,12 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 AUTH_USER_MODEL="school_management_app.CustomUser"
 AUTHENTICATION_BACKENDS=['school_management_app.EmailBackEnd.EmailBackEnd']
 
-EMAIL_BACKEND="django.core.mail.backends.filebased.EmailBackend"
 EMAIL_FILE_PATH=os.path.join(BASE_DIR,"sent_mails")
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+# Email server settings for Gmail
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'ezrasimiyu777@gmail.com'  # Your Gmail email address
+EMAIL_HOST_PASSWORD = 'Jesuslives@7'  # Your Gmail password
+EMAIL_USE_TLS = True  # Enable TLS encryption
