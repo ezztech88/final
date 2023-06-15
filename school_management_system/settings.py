@@ -120,11 +120,17 @@ AUTH_USER_MODEL="school_management_app.CustomUser"
 AUTHENTICATION_BACKENDS=['school_management_app.EmailBackEnd.EmailBackEnd']
 
 EMAIL_FILE_PATH=os.path.join(BASE_DIR,"sent_mails")
+# settings.py
+
+# Set the email backend
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
-# Email server settings for Gmail
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'ezrasimiyu777@gmail.com'  # Your Gmail email address
-EMAIL_HOST_PASSWORD = 'Jesuslives@7'  # Your Gmail password
-EMAIL_USE_TLS = True  # Enable TLS encryption
+# Email server settings for Yahoo Mail
+EMAIL_HOST = 'smtp.mail.yahoo.com'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'ezrasimiyu777@gmail.com'  # Your Google email address
+EMAIL_HOST_PASSWORD = 'Jesuslives@7'  # Your Google email password
+EMAIL_USE_SSL = True  # Use SSL encryption
+
+# Other email settings...
+
