@@ -4,7 +4,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = 'so*rai_2(lk7t(yh%de+_kp_c%*r_b9wkga%gyo5tl9_8_r!xx'
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'eldovalleybaptistacademy.onrender.com',
