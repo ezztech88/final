@@ -128,7 +128,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 # Email server settings for Yahoo Mail
 EMAIL_HOST = 'smtp.mail.yahoo.com'
 EMAIL_PORT = 465
-EMAIL_HOST_USER = 'ezrasimiyu777@gmail.com'  # Your Google email address
+EMAIL_HOST_USER = 'ezrasimiyu777@yahoo.com'  # Your Google email address
 EMAIL_HOST_PASSWORD = 'Jesuslives@7'  # Your Google email password
 EMAIL_USE_SSL = True  # Use SSL encryption
 
