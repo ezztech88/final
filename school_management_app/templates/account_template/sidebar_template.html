@@ -115,66 +115,7 @@
               </p>
             </a>
           </li>
-          <li class="nav-header">Finance</li>
-            <li class="nav-item">
-              {% url 'manage_invoice' as manage_invoice %}
-              <a href="{% url 'manage_invoice' %}" class="nav-link">
-                <i class="nav-icon fas fa-money-bill-alt"></i>
-              <p>
-                Manage Invoices
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-             {% url 'account_add_financial_record' as account_add_financial_record %}
-             {% url 'account_financial_record_list' as account_financial_record_list %}
-              <a href="#" class="nav-link {% if request.path == account_add_financial_record %} active {% elif request.path == account_financial_record_list %} active {% endif %}">
-                <i class="nav-icon fas fa-money-bill-alt"></i>
-              <p>
-                FINANCES
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="{% url 'account_add_financial_record' %}"
-                class="nav-link {% if request.path == account_add_financial_record %} active {% endif %}">
-                <i class="nav-icon fas fa-plus"></i>
-                <p>
-                  Add Financial Record 
-                </p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="{% url 'account_financial_record_list' %}"
-                class="nav-link {% if request.path == account_financial_record_list %} active {% endif %}">
-                <i class="nav-icon fas fa-tasks"></i>
-                <p>
-                  Financial Record List
-                </p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="{% url 'account_default_settings' %}"
-                class="nav-link {% if request.path == account_default_settings %} active {% endif %}">
-                <i class="nav-icon fas fa-tasks"></i>
-                <p>
-                  Set Fee DEFAULTS
-                </p>
-              </a>
-            </li>
-          </ul>
-          </li>
-          <!-- Leave -->
-          <li class="nav-item">
-            {% url 'account_apply_leave' as account_apply_leave %}
-            <a href="{{ account_apply_leave }}" class="nav-link {% if request.path == account_apply_leave %} active {% endif %}">
-              <i class="nav-icon fas fa-sign-out-alt"></i>
-              <p>
-                APPLY LEAVE
-              </p>
-            </a>
-          </li>
+
           <li class="nav-item">
             {% url 'account_feedback' as account_feedback %}
             <a href="{{ account_feedback }}" class="nav-link {% if request.path == account_feedback %} active {% endif %}">
