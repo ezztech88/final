@@ -7,7 +7,7 @@ SECRET_KEY = 'so*rai_2(lk7t(yh%de+_kp_c%*r_b9wkga%gyo5tl9_8_r!xx'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'eldovalleybaptistacademy.onrender.com',
+    'brayog.onrender.com',
     # Other allowed hosts...
 ]
 
