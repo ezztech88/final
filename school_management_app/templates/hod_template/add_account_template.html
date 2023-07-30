@@ -1,6 +1,6 @@
 {% extends 'hod_template/base_template.html' %}
 {% block page_title %}
-<i class="nav-icon fas fa-chalkboard-teacher"></i> ADD ACCOUNTANT <a href="/manage_staff" class="btn btn-success">STAFF LIST</a>
+<i class="nav-icon fas fa-user-graduate"></i> ADD ALUMNI <a href="/manage_account" class="btn btn-success">ALUMNI LIST</a>
 {% endblock page_title %}
 {% block main_content %}
 
@@ -10,7 +10,7 @@
       <div class="col-md-12">
         <div class="card card-primary">
           <div class="card-header">
-            <h3 class="card-title">Add Accountant</h3>
+            <h3 class="card-title">Add Alumni</h3>
           </div>
           <form role="form" action="/add_account_save" method="post" enctype="multipart/form-data">
             {% csrf_token %}
@@ -59,7 +59,7 @@
               </div>
             </div>
             <div class="card-footer">
-              <button type="submit" class="btn btn-primary btn-block">Add Accountant</button>
+              <button type="submit" class="btn btn-primary btn-block">Add Alumni</button>
             </div>
           </form>
         </div>
