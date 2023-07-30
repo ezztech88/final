@@ -1,5 +1,5 @@
 {% extends 'hod_template/base_template.html' %} {% load static %} {% block page_title %}
-<i class="nav-icon fas fa-chalkboard-teacher"></i> ADD ACCOUNTANT NEWS
+<i class="nav-icon fas fa-user-graduate"></i> ADD ALUMNI NEWS
 <a href="/manage_account_news" class="btn btn-success"><i class="nav-icon fas fa-tasks"></i> MANAGE POSTED NEWS
 </a>
 {% endblock page_title %} {% block main_content %}
@@ -13,7 +13,7 @@
       <div class="col-md-12">
         <div class="card card-primary">
           <div class="card-header">
-            <h3 class="card-title">Add Accountant News</h3>
+            <h3 class="card-title">Add Alumni News</h3>
           </div>
           <form role="form" action="/add_account_news_save" method="post" enctype="multipart/form-data">
             {% csrf_token %}
