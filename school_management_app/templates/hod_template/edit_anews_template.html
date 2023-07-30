@@ -62,7 +62,7 @@
   }
 </style>
 {% endblock custom_css %}
-<i class="nav-icon fas fa-chalkboard-teacher"></i> EDIT ACCOUNTANT NEWS
+<i class="nav-icon fas fa-chalkboard-teacher"></i> EDIT ALUMNI NEWS
 <a href="/manage_account_news" class="btn btn-success"><i class="nav-icon fas fa-chevron-left"></i> BACK</a>
 {% endblock page_title %} {% block main_content %}
 <!-- Main content -->
@@ -75,7 +75,7 @@
       <div class="col-md-12">
         <div class="card card-primary">
           <div class="card-header">
-            <h3 class="card-title">Edit Accountant News</h3>
+            <h3 class="card-title">Edit Alumni News</h3>
           </div>
           <form role="form" action="/edit_account_news_save" method="post" enctype="multipart/form-data">
             {% csrf_token %}
@@ -124,7 +124,7 @@
 
             <div class="card-footer">
               <button type="submit" class="btn btn-primary btn-block">
-                Edit  Accountant News
+                Edit  Alumni News
               </button>
             </div>
           </form>
