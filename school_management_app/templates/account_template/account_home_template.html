@@ -9,7 +9,7 @@
     <div class="card">
   <img src="{% static 'dist/img/founder.jpg' %}" alt="Card Image" class="card-img-top">
   <div class="card-body">
-    <h5 class="card-title">THE FOUNDER</h5>
+    <h5 class="card-title">NATIONAL TRANS NZOIA ALUMNI AND STUDENT BOARD</h5>
     <p class="card-text"><p>Rev. Joel Kandie Chebii, the founder of Eldo Valley Baptist Academy, is a remarkable individual who was born in a village in Baringo, Kenya. While his origins lie in a rural setting, he has expanded his work and influence on an international level.</p>
 
 <p>Apart from his involvement in education as the founder of Eldo Valley Baptist Academy, Rev. Joel Kandie Chebii has dedicated his efforts to defending the rights of workers and laborers. He works closely with the Central Organization of Trade Unions (COTU) in Kenya, collaborating with Francis Atwoli, a prominent labor leader and Secretary-General of COTU.</p>
@@ -29,50 +29,7 @@
   </div>
 </div>
 
-  <div class="container-fluid">
-      <div class="row">
-      <div class="col-lg-3 col-6">
-        <!-- small box -->
-        <div class="small-box bg-info shadow-custom">
-          <div class="inner">
-            <h3>{{ student_count }}</h3>
 
-            <p>Total Students</p>
-          </div>
-          <div class="icon">
-            <i class="nav-icon fas fa-user-graduate"></i>
-          </div>
-          <a  href="{% url 'account_financial_record_list' %}"class="small-box-footer">More info... <i class="fas fa-arrow-circle-right"></i></a>
-        </div>
-      </div>
-      <!-- ./col -->
-      <div class="col-lg-3 col-6">
-        <!-- small box -->
-        <div class="small-box bg-success shadow-custom">
-          <div class="inner">
-            <h3>{{ finance_count }}</h3>
-
-            <p>Total Financial Receipts</p>
-          </div>
-          <div class="icon">
-            <i class="nav-icon fas fa-file-invoice-dollar"></i>
-          </div>
-          <a href="{% url 'account_financial_record_list' %}" class="small-box-footer">More info... <i class="fas fa-arrow-circle-right"></i></a>
-        </div>
-      </div>
-      <div class="col-lg-3 col-6">
-        <!-- small box -->
-        <div class="small-box bg-success shadow-custom">
-          <div class="inner">
-            <h3>{{ leave_count }}</h3>
-
-            <p>Total Leaves Taken</p>
-          </div>
-          <div class="icon">
-            <i class="ion ion-stats-bars"></i>
-          </div>
-          <a href="{% url 'account_apply_leave' %}" class="small-box-footer">More info... <i class="fas fa-arrow-circle-right"></i></a>
-        </div>
       </div>
      </div>
   </section>
