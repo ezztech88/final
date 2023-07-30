@@ -52,7 +52,7 @@
   }
 </style>
 {% endblock custom_css %}
-<i class="nav-icon fas fa-newspaper"></i> MANAGE ACCOUNTANT NEWS <a href="/add_account_news" class="btn btn-success shadow-custom"><i
+<i class="nav-icon fas fa-newspaper"></i> MANAGE ALUMNI NEWS <a href="/add_account_news" class="btn btn-success shadow-custom"><i
     class="nav-icon fas fa-plus"></i> ADD NEWS</a>
 {% endblock page_title %}
 {% block main_content %}
@@ -65,7 +65,7 @@
       <div class="col-12">
         <div class="card">
           <div class="card-header">
-            <h3 class="card-title">Manage Accountant News</h3>
+            <h3 class="card-title">Manage Alumni News</h3>
           </div>
           <div class="card-body">
             <div class="form-group">
@@ -86,7 +86,7 @@
                   <th>ID</th>
                   <th>News Image</th>
                   <th>News Text</th>
-                  <!-- <th>News</th> -->
+                   <th>News</th> 
                   <th>Date Posted</th>
                   <th>Action</th>
                 </tr>
@@ -97,7 +97,7 @@
                   <td style="width: 60px;">{{ a.id }}</td>
                   <td><img class="zoomD" src="{{ a.pic }}" /></td>
                   <td>{{ a.ntitle }}</td>
-                  <!-- <td>{{ a.ntext }}</td> -->
+                  <td>{{ a.ntext }}</td> 
                   <td style="width: 180px;">{{ a.ndate }}</td>
                   <td style="width: 260px;">
                     <a href="/view_account_news/{{ a.id }}" class="btn btn-success shadow-custom">VIEW</a>
