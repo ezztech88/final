@@ -1,6 +1,6 @@
 {% extends 'hod_template/base_template.html' %}
 {% block page_title %}
-<i class="nav-icon fas fa-chalkboard-teacher"></i> EDIT ACCOUNTANT DETAILS | USERNAME : {{ account.admin.username }} | #ID : {{ account.admin.id }}
+<i class="nav-icon fas fa-chalkboard-teacher"></i> EDIT ALUMNI DETAILS | USERNAME : {{ account.admin.username }} | #ID : {{ account.admin.id }}
 <a href="/manage_account" class="btn btn-success">BACK</a>
 {% endblock page_title %}
 {% block main_content %}
@@ -11,7 +11,7 @@
       <div class="col-md-12">
         <div class="card card-primary">
           <div class="card-header">
-            <h3 class="card-title">Edit Accountant Details</h3>
+            <h3 class="card-title">Edit Alumni Details</h3>
           </div>
           <form role="form" action="/edit_account_save" method="post" enctype="multipart/form-data">
             {% csrf_token %}
